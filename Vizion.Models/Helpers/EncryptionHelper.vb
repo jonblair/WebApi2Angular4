@@ -22,7 +22,6 @@ Public NotInheritable Class EncryptionHelper
             Dim x As Integer = rnd.Next(0, SaltCharsMix.Length - 1)
             SaltChars &= (SaltCharsMix.Substring(x, 1))
         Next
-        'change
         Return SaltChars
     End Function
 End Class
