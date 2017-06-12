@@ -20,12 +20,12 @@ Public Class UserService
     End Function
 
     Public Function GetUsersByNameSearch(ByVal name As String) As List(Of User)
-        Return GetBySearch(Function(x) x.FullName Like name)
+        Return GetBySearch(Function(x) x.FirstName.Contains(name) Or x.LastName.Contains(name)).OrderBy(Function(x) x.Id).ToList()
     End Function
 
 #Region "Private Methods"
     Private Function GetBySearch(expression As Expression(Of Func(Of User, Boolean))) As List(Of User)
-        Return _dbRepository.Users.Search(expression)
+        Return _dbRepository.Users.Search(expression).ToList()
     End Function
 #End Region
 End Class
