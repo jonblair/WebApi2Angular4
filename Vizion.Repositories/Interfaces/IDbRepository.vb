@@ -2,7 +2,7 @@
 Imports Vizion.Models
 Imports Vizion.Repositories
 
-Public Interface IVizionRepository : Inherits IDisposable
+Public Interface IDbRepository : Inherits IDisposable
     Property Users() As IUserRepository
 
 

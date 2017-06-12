@@ -1,8 +1,8 @@
 ﻿Imports Vizion.Repositories
 Imports System.Data.Entity
 
-Public Class VizionRepository
-    Implements IVizionRepository
+Public Class DBRepository
+    Implements IDbRepository
 
     Private ReadOnly _context As DbContext
 
@@ -11,7 +11,7 @@ Public Class VizionRepository
         Users = New UserRepository(_context)
     End Sub
 
-    Public Property Users As IUserRepository Implements IVizionRepository.Users
+    Public Property Users As IUserRepository Implements IDbRepository.Users
         Get
             Return m_Users
         End Get
@@ -21,7 +21,7 @@ Public Class VizionRepository
     End Property
     Private m_Users As IUserRepository
 
-    Public Function Complete() As Integer Implements IVizionRepository.Complete
+    Public Function Complete() As Integer Implements IDbRepository.Complete
         Return _context.SaveChanges()
     End Function
 

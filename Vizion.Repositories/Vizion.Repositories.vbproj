@@ -70,10 +70,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Base_Classes\Repository.vb" />
+    <Compile Include="BaseClasses\Repository.vb" />
     <Compile Include="DbContexts\VizionWMSReportsContext.vb" />
-    <Compile Include="VizionRepository.vb" />
-    <Compile Include="Interfaces\IVizionRepository.vb" />
+    <Compile Include="DbRepository.vb" />
+    <Compile Include="Interfaces\IDbRepository.vb" />
     <Compile Include="Interfaces\IRepository.vb" />
     <Compile Include="Interfaces\IUserRepository.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

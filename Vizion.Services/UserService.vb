@@ -5,18 +5,18 @@ Imports Vizion.Repositories
 
 
 Public Class UserService
-    Private ReadOnly vizionRepository As IVizionRepository
+    Private ReadOnly _dbRepository As IDbRepository
 
     Public Sub New()
-        vizionRepository = New VizionRepository(New VizionWMSDataContext())
+        _dbRepository = New DBRepository(New VizionWMSDataContext())
     End Sub
 
     Public Function GetUsers() As List(Of User)
-        Return vizionRepository.Users.GetAll.OrderBy(Function(x) x.Id).ToList()
+        Return _dbRepository.Users.GetAll.OrderBy(Function(x) x.Id).ToList()
     End Function
 
     Public Function GetUserById(ByVal userId As Integer) As User
-        Return vizionRepository.Users.Get(userId)
+        Return _dbRepository.Users.Get(userId)
     End Function
 
     Public Function GetUsersByNameSearch(ByVal name As String) As List(Of User)
@@ -25,7 +25,7 @@ Public Class UserService
 
 #Region "Private Methods"
     Private Function GetBySearch(expression As Expression(Of Func(Of User, Boolean))) As List(Of User)
-        Return vizionRepository.Users.Search(expression)
+        Return _dbRepository.Users.Search(expression)
     End Function
 #End Region
 End Class

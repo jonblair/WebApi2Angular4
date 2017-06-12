@@ -6,6 +6,7 @@ Imports Vizion.Models
 Imports Vizion.Services
 
 Namespace Controllers
+    <RoutePrefix("api/users")>
     Public Class UsersController : Inherits ApiController
         Private ReadOnly myUserService As UserService
         Public Sub New()
@@ -16,6 +17,7 @@ Namespace Controllers
             Return myUserService.GetUsers
         End Function
 
+        <Route("{id:int}")>
         Public Function GetUser(id As Integer) As IHttpActionResult
             Dim myUser = myUserService.GetUserById(id)
             If myUser Is Nothing Then
@@ -24,7 +26,8 @@ Namespace Controllers
             Return Ok(myUser)
         End Function
 
-        Public Function SearchByName(name As String) As IHttpActionResult
+        <Route("{name}")>
+        Public Function GetUserByName(name As String) As IHttpActionResult
             Dim myUsers As New List(Of User)
             myUsers = myUserService.GetUsersByNameSearch(name)
             If myUsers.Count > 0 Then
