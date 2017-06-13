@@ -5,8 +5,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{87188C83-AFF7-4D27-8771-131C4DDE1CFC}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Vizion.Tests.Unit</RootNamespace>
-    <AssemblyName>Vizion.Tests.Unit</AssemblyName>
+    <RootNamespace>Vizion.Tests</RootNamespace>
+    <AssemblyName>Vizion.Tests</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -23,7 +23,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Vizion.Tests.Unit.xml</DocumentationFile>
+    <DocumentationFile>Vizion.Tests.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Vizion.Tests.Unit.xml</DocumentationFile>
+    <DocumentationFile>Vizion.Tests.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
