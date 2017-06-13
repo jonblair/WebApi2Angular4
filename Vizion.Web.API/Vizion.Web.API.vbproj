@@ -192,10 +192,6 @@
       <Project>{9e421887-63bf-4d77-90dc-1dabc866af77}</Project>
       <Name>Vizion.Repositories</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Vizion.Services\Vizion.Services.vbproj">
-      <Project>{b6bbddf4-2457-4afc-9247-c17488040fad}</Project>
-      <Name>Vizion.Services</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
