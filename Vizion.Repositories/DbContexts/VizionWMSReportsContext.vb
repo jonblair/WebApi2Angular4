@@ -9,4 +9,8 @@ Public Class VizionWMSReportsContext : Inherits DbContext
         Me.Configuration.LazyLoadingEnabled = False
     End Sub
 
+    Protected Overrides Sub OnModelCreating(modelBuilder As DbModelBuilder)
+        Database.SetInitializer(Of VizionWMSReportsContext)(Nothing)
+        MyBase.OnModelCreating(modelBuilder)
+    End Sub
 End Class

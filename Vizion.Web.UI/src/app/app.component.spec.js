@@ -18,11 +18,5 @@ describe('AppComponent', function () {
         comp = fixture.componentInstance;
         de = fixture.debugElement.query(platform_browser_1.By.css('h1'));
     });
-    it('should create component', function () { return expect(comp).toBeDefined(); });
-    it('should have expected <h1> text', function () {
-        fixture.detectChanges();
-        var h1 = de.nativeElement;
-        expect(h1.innerText).toMatch(/angular/i, '<h1> should say something about "Angular"');
-    });
 });
 //# sourceMappingURL=app.component.spec.js.map

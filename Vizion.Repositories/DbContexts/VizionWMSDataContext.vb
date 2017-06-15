@@ -9,6 +9,11 @@ Public Class VizionWMSDataContext : Inherits DbContext
         Me.Configuration.LazyLoadingEnabled = False
     End Sub
 
+    Protected Overrides Sub OnModelCreating(modelBuilder As DbModelBuilder)
+        Database.SetInitializer(Of VizionWMSDataContext)(Nothing)
+        MyBase.OnModelCreating(modelBuilder)
+    End Sub
+
     Public Property User() As DbSet(Of User)
         Get
             Return m_User
@@ -18,9 +23,4 @@ Public Class VizionWMSDataContext : Inherits DbContext
         End Set
     End Property
     Private m_User As DbSet(Of User)
-
-    Protected Overrides Sub OnModelCreating(modelBuilder As DbModelBuilder)
-        Database.SetInitializer(Of VizionWMSDataContext)(Nothing)
-        MyBase.OnModelCreating(modelBuilder)
-    End Sub
 End Class
