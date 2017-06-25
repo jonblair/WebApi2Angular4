@@ -132,6 +132,7 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.vb" />
     <Compile Include="Controllers\CustomersController.vb" />
+    <Compile Include="Controllers\ShipmentsController.vb" />
     <Compile Include="Controllers\UsersController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>

@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseClasses\Repository.vb" />
+    <Compile Include="ShipmentRepository.vb" />
     <Compile Include="CustomerRepository.vb" />
     <Compile Include="DbContexts\VizionWmsReportsContext.vb" />
     <Compile Include="DbContexts\VizionWmsHistoryContext.vb" />
@@ -78,6 +79,7 @@
     <Compile Include="Interfaces\ICustomerRepository.vb" />
     <Compile Include="Interfaces\IDbRepository.vb" />
     <Compile Include="Interfaces\IRepository.vb" />
+    <Compile Include="Interfaces\IShipmentRepository.vb" />
     <Compile Include="Interfaces\IUserRepository.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
