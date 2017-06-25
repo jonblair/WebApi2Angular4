@@ -11,6 +11,7 @@ Public NotInheritable Class EncryptionHelper
         Dim hashType As HashAlgorithm = New SHA512Managed()
         Dim hashBytes As Byte() = hashType.ComputeHash(convertedToBytes)
         Dim hashedResult As String = Convert.ToBase64String(hashBytes)
+
         Return hashedResult
     End Function
 
@@ -22,6 +23,7 @@ Public NotInheritable Class EncryptionHelper
             Dim x As Integer = rnd.Next(0, SaltCharsMix.Length - 1)
             SaltChars &= (SaltCharsMix.Substring(x, 1))
         Next
+
         Return SaltChars
     End Function
 End Class

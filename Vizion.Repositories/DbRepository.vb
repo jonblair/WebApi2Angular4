@@ -9,6 +9,13 @@ Public Class DBRepository
     Public Sub New(ByVal context As DbContext)
         _context = context
         Users = New UserRepository(_context)
+        Customers = New CustomerRepository(_context)
+    End Sub
+
+    Protected Overrides Sub Finalize()
+        MyBase.Finalize()
+
+        Dispose()
     End Sub
 
     Public Property Users As IUserRepository Implements IDbRepository.Users
@@ -21,6 +28,16 @@ Public Class DBRepository
     End Property
     Private m_Users As IUserRepository
 
+    Public Property Customers As ICustomerRepository Implements IDbRepository.Customers
+        Get
+            Return m_Customers
+        End Get
+        Private Set
+            m_Customers = Value
+        End Set
+    End Property
+    Private m_Customers As ICustomerRepository
+
     Public Function Complete() As Integer Implements IDbRepository.Complete
         Return _context.SaveChanges()
     End Function
@@ -28,5 +45,4 @@ Public Class DBRepository
     Public Sub Dispose() Implements IDisposable.Dispose
         _context.Dispose()
     End Sub
-
 End Class

@@ -84,6 +84,7 @@
     <TypeScriptCompile Include="src\app\components\scan-barcode\scan-barcode.module.ts" />
     <TypeScriptCompile Include="src\app\components\users\users.component.ts" />
     <TypeScriptCompile Include="src\app\components\users\users.module.ts" />
+    <TypeScriptCompile Include="src\app\app.routing.ts" />
     <TypeScriptCompile Include="src\main.ts" />
   </ItemGroup>
   <ItemGroup>

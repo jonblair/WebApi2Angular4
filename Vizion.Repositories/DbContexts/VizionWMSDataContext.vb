@@ -14,6 +14,12 @@ Public Class VizionWMSDataContext : Inherits DbContext
         MyBase.OnModelCreating(modelBuilder)
     End Sub
 
+    Protected Overrides Sub Finalize()
+        MyBase.Finalize()
+
+        Dispose()
+    End Sub
+
     Public Property User() As DbSet(Of User)
         Get
             Return m_User
@@ -23,4 +29,14 @@ Public Class VizionWMSDataContext : Inherits DbContext
         End Set
     End Property
     Private m_User As DbSet(Of User)
+
+    Public Property Customer() As DbSet(Of Customer)
+        Get
+            Return m_Customer
+        End Get
+        Set
+            m_Customer = Value
+        End Set
+    End Property
+    Private m_Customer As DbSet(Of Customer)
 End Class

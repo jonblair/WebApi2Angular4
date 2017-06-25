@@ -5,7 +5,6 @@ Imports Vizion.Repositories
 
 <TestClass()> Public Class UserUnitTest
     Private myMockUsers As New List(Of User)
-    Private myMockUserRepo As IUserRepository
     Private myMockUser As User
 
     '<TestMethod()> Public Sub UserRepo_RecordTotalsTest()

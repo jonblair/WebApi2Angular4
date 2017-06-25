@@ -71,8 +71,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseClasses\Repository.vb" />
-    <Compile Include="DbContexts\VizionWMSReportsContext.vb" />
+    <Compile Include="CustomerRepository.vb" />
+    <Compile Include="DbContexts\VizionWmsReportsContext.vb" />
+    <Compile Include="DbContexts\VizionWmsHistoryContext.vb" />
     <Compile Include="DbRepository.vb" />
+    <Compile Include="Interfaces\ICustomerRepository.vb" />
     <Compile Include="Interfaces\IDbRepository.vb" />
     <Compile Include="Interfaces\IRepository.vb" />
     <Compile Include="Interfaces\IUserRepository.vb" />
@@ -92,7 +95,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="UserRepository.vb" />
-    <Compile Include="DbContexts\VizionWMSDataContext.vb" />
+    <Compile Include="DbContexts\VizionWmsDataContext.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -103,7 +106,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
