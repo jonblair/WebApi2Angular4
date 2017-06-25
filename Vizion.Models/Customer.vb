@@ -7,6 +7,12 @@ Public Class Customer
 
     End Sub
 
+    Protected Overrides Sub Finalize()
+        MyBase.Finalize()
+    End Sub
+
+
+
 #Region "Mapped"
     Public Property Id As Integer
     <Column("Customer", TypeName:="text")>

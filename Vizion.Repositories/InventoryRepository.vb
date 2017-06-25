@@ -2,8 +2,8 @@
 Imports Vizion.Repositories
 Imports System.Data.Entity
 
-Public Class UserRepository : Inherits Repository(Of User)
-    Implements IUserRepository
+Public Class InventoryRepository : Inherits Repository(Of Inventory)
+    Implements IInventoryRepository
 
     Public Sub New(context As DbContext)
         MyBase.New(context)

@@ -71,6 +71,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseClasses\Repository.vb" />
+    <Compile Include="Interfaces\IInventoryRepository.vb" />
+    <Compile Include="InventoryRepository.vb" />
     <Compile Include="ShipmentRepository.vb" />
     <Compile Include="CustomerRepository.vb" />
     <Compile Include="DbContexts\VizionWmsReportsContext.vb" />

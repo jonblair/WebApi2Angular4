@@ -49,4 +49,14 @@ Public Class VizionWMSDataContext : Inherits DbContext
         End Set
     End Property
     Private m_Shipment As DbSet(Of Shipment)
+
+    Public Property Inventory() As DbSet(Of Inventory)
+        Get
+            Return m_Inventory
+        End Get
+        Set
+            m_Inventory = Value
+        End Set
+    End Property
+    Private m_Inventory As DbSet(Of Inventory)
 End Class

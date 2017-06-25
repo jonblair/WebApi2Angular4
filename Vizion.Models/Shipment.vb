@@ -12,8 +12,9 @@ Public Class Shipment
     End Sub
 
 #Region "Mapped"
+    Public Property Id As Integer
     <Column("shipment", TypeName:="text")>
-    Public Property Id As String
+    Public Property ShipmentId As String
     Public Property Consolidation As Decimal?
     <Column("customer", TypeName:="text")>
     Public Property CustomerName As String

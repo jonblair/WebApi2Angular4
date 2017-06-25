@@ -11,6 +11,7 @@ Public Class DBRepository
         Users = New UserRepository(_context)
         Customers = New CustomerRepository(_context)
         Shipments = New ShipmentRepository(_context)
+        Inventory = New InventoryRepository(_context)
     End Sub
 
     Protected Overrides Sub Finalize()
@@ -48,6 +49,18 @@ Public Class DBRepository
         End Set
     End Property
     Private m_Shipments As IShipmentRepository
+
+    Public Property Inventory As IInventoryRepository Implements IDbRepository.Inventory
+        Get
+            Return m_Inventory
+        End Get
+        Private Set
+            m_Inventory = Value
+        End Set
+    End Property
+    Private m_Inventory As IInventoryRepository
+
+
 
     Public Function Complete() As Integer Implements IDbRepository.Complete
         Return _context.SaveChanges()

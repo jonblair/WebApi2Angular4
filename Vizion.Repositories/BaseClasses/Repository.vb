@@ -18,8 +18,8 @@ Public Class Repository(Of TEntity As Class)
         Return Context.[Set](Of TEntity)().Find(id)
     End Function
 
-    Private Function GetAll() As IEnumerable(Of TEntity) Implements IRepository(Of TEntity).GetAll
-        Return Context.[Set](Of TEntity)().ToList()
+    Private Function GetAll(Optional recordCount As Integer = 100) As IEnumerable(Of TEntity) Implements IRepository(Of TEntity).GetAll
+        Return Context.[Set](Of TEntity)().ToList().Take(recordCount)
     End Function
 
     Private Function Search(predicate As Expression(Of Func(Of TEntity, Boolean))) As IEnumerable(Of TEntity) Implements IRepository(Of TEntity).Search
