@@ -12,11 +12,9 @@ Imports System.Web.Http.Cors
 Public Module WebApiConfig
     Public Sub Register(ByVal config As HttpConfiguration)
         'Web API configuration and services
-        'returns json by default
-        config.Formatters.JsonFormatter.SupportedMediaTypes.Add(New MediaTypeHeaderValue("text/html"))
+        config.Formatters.JsonFormatter.SupportedMediaTypes.Add(New MediaTypeHeaderValue("text/html")) 'return json by default
 
-        'CORS is for when a client requests access to a resource from a domain that is different from 
-        'the domain where the resource originates
+        'CORS is for when a client requests access to a resource from a different domain than where the resource originates
         Dim cors = New EnableCorsAttribute("*", "*", "*")
         config.EnableCors(cors)
         config.MessageHandlers.Add(New PreflightRequestsHandler())
@@ -26,14 +24,13 @@ Public Module WebApiConfig
         config.Routes.MapHttpRoute(
             name:="DefaultApi",
             routeTemplate:="api/{controller}/{id}",
-            defaults:=New With {.id = RouteParameter.Optional}
-        )
+            defaults:=New With {.id = RouteParameter.Optional})
     End Sub
 
 
 
-    Public Class PreflightRequestsHandler
-        Inherits DelegatingHandler
+    Public Class PreflightRequestsHandler : Inherits DelegatingHandler
+
         Protected Overrides Function SendAsync(request As HttpRequestMessage, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
             If request.Headers.Contains("Origin") AndAlso request.Method.Method = "OPTIONS" Then
                 Dim response = New HttpResponseMessage() With {.StatusCode = HttpStatusCode.OK}

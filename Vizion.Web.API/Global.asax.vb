@@ -6,7 +6,8 @@ Public Class WebApiApplication : Inherits System.Web.HttpApplication
 
     Protected Sub Application_Start()
         GlobalConfiguration.Configure(AddressOf WebApiConfig.Register)
-        'formatting json
+
+        'json formatting
         Dim formatters = GlobalConfiguration.Configuration.Formatters
         Dim jsonFormatter = formatters.JsonFormatter
         Dim settings = jsonFormatter.SerializerSettings
