@@ -26,7 +26,7 @@ Namespace Controllers
 
         <HttpGet>
         Public Function [Get]() As IHttpActionResult
-            Dim myInventorys = _dbWmsDataRepository.Inventory.GetAll.OrderBy(Function(x) x.Id).ToList
+            Dim myInventorys = _dbWmsDataRepository.Inventory.GetAll.OrderBy(Function(x) x.Id).Take(100).ToList
             If myInventorys.Count = 0 Then
                 Return NotFound()
             End If
@@ -48,7 +48,7 @@ Namespace Controllers
         <HttpGet>
         <Route("{name}")>
         Public Function GetInventoryByCustomerName(name As String) As IHttpActionResult
-            Dim myInventorys = Me.GetBySearch(Function(x) x.Customer.Contains(name)).OrderBy(Function(x) x.Id).ToList()
+            Dim myInventorys = Me.GetBySearch(Function(x) x.Customer.Contains(name)).OrderBy(Function(x) x.Id).Take(100).ToList()
             If myInventorys.Count = 0 Then
                 Return NotFound()
             End If
