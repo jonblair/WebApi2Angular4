@@ -9,6 +9,12 @@ Public Class UserRepository : Inherits Repository(Of User)
         MyBase.New(context)
     End Sub
 
+    Protected Overrides Sub Finalize()
+        MyBase.Finalize()
+
+        _dbContext.Dispose()
+    End Sub
+
     Public ReadOnly Property _dbContext() As DbContext
         Get
             Return TryCast(Context, DbContext)

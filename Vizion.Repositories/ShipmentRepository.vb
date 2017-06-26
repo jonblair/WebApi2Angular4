@@ -8,6 +8,12 @@ Public Class ShipmentRepository : Inherits Repository(Of Shipment)
     Public Sub New(context As DbContext)
         MyBase.New(context)
     End Sub
+    Protected Overrides Sub Finalize()
+        MyBase.Finalize()
+
+        _dbContext.Dispose()
+    End Sub
+
 
     Public ReadOnly Property _dbContext() As DbContext
         Get
