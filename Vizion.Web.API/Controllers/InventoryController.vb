@@ -27,6 +27,8 @@ Namespace Controllers
         <HttpGet>
         Public Function [Get]() As IHttpActionResult
             Dim myInventorys = _dbWmsDataRepository.Inventory.GetAll.OrderBy(Function(x) x.Id).Take(100).ToList
+            'Example of adding custom method in repos
+            'Dim myInventorys2 = _dbWmsDataRepository.Inventory.GetInventoryByCustomer("").ToList()
             If myInventorys.Count = 0 Then
                 Return NotFound()
             End If

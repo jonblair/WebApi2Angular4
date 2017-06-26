@@ -20,4 +20,8 @@ Public Class InventoryRepository : Inherits Repository(Of Inventory)
             Return TryCast(Context, DbContext)
         End Get
     End Property
+
+    Public Function GetInventoryByCustomer(customer As String) As List(Of Inventory) Implements IInventoryRepository.GetInventoryByCustomer
+        Return Context.[Set](Of Inventory)().Where(Function(x) x.Customer = customer).ToList()
+    End Function
 End Class
