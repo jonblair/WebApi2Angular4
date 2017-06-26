@@ -3,12 +3,20 @@ Imports Vizion.Models
 
 <Table("UserAccess")>
 Public Class User
+    Implements IUser
+
     Public Sub New()
 
     End Sub
+
+    Protected Overrides Sub Finalize()
+        MyBase.Finalize()
+    End Sub
+
+
 #Region "Mapped"
-    Public Property Id As Integer
-    Public Property UserName As String
+    Public Property Id As Integer Implements IUser.Id
+    Public Property UserName As String Implements IUser.UserName
         Get
             Return _userName
         End Get
@@ -17,7 +25,7 @@ Public Class User
         End Set
     End Property
     Private _userName As String = Nothing
-    Public Property FirstName As String
+    Public Property FirstName As String Implements IUser.FirstName
         Get
             Return _firstName
         End Get
@@ -26,7 +34,7 @@ Public Class User
         End Set
     End Property
     Private _firstName As String = Nothing
-    Public Property LastName As String
+    Public Property LastName As String Implements IUser.LastName
         Get
             Return _lastName
         End Get
@@ -35,7 +43,7 @@ Public Class User
         End Set
     End Property
     Private _lastName As String = Nothing
-    Public Property Password As String
+    Public Property Password As String Implements IUser.Password
         Get
             Return _password
         End Get
@@ -48,13 +56,13 @@ Public Class User
 
 #Region "Not Mapped"
     <NotMapped>
-    Public Property Email As String
+    Public Property Email As String Implements IUser.Email
 
     <NotMapped>
-    Public Property CommonName As String
+    Public Property CommonName As String Implements IUser.CommonName
 
     <NotMapped>
-    Public ReadOnly Property FullName As String
+    Public ReadOnly Property FullName As String Implements IUser.FullName
         Get
             If (Me.CommonName IsNot Nothing) Then
                 Return String.Format("{0} {1}", Me.CommonName, Me.LastName)
@@ -64,5 +72,16 @@ Public Class User
         End Get
     End Property
 #End Region
+
+    Public Interface IUser
+        Property Id As Integer
+        Property UserName As String
+        Property FirstName As String
+        Property LastName As String
+        Property Password As String
+        Property Email As String
+        Property CommonName As String
+        ReadOnly Property FullName As String
+    End Interface
 
 End Class

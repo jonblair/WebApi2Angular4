@@ -2,11 +2,18 @@
 Imports Vizion.Models
 
 <Table("UserAccess")>
-Public Class UserPermission
+Public Class UserPermissions
+    Implements IUserPermissions
 
     Public Sub New()
 
     End Sub
+
+    Protected Overrides Sub Finalize()
+        MyBase.Finalize()
+    End Sub
+
+
 
 #Region "Mapped"
 
@@ -15,9 +22,9 @@ Public Class UserPermission
 #Region "Not Mapped"
 
 #End Region
-
-
-    Public Id As Integer
-    Public ReportsAccess As Boolean
-    Public ProductsAccess As Boolean
 End Class
+
+
+Public Interface IUserPermissions
+
+End Interface
