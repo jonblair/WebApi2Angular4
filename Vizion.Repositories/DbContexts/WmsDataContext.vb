@@ -2,15 +2,15 @@
 'Imports Queries.Persistence.EntityConfigurations
 Imports System.Data.Entity
 
-Public Class VizionWMSDataContext : Inherits DbContext
+Public Class WmsDataContext : Inherits DbContext
 
     Public Sub New()
-        MyBase.New("name=VizionWMSDataContext")
+        MyBase.New("name=WMSDataContext")
         Me.Configuration.LazyLoadingEnabled = False
     End Sub
 
     Protected Overrides Sub OnModelCreating(modelBuilder As DbModelBuilder)
-        Database.SetInitializer(Of VizionWMSDataContext)(Nothing)
+        Database.SetInitializer(Of WmsDataContext)(Nothing)
         MyBase.OnModelCreating(modelBuilder)
     End Sub
 

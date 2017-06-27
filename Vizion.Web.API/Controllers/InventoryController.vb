@@ -15,7 +15,7 @@ Namespace Controllers
     Public Class InventoryController : Inherits ApiController
         Private ReadOnly _dbWmsDataRepository As IDbRepository
         Public Sub New()
-            _dbWmsDataRepository = New DBRepository(New VizionWMSDataContext())
+            _dbWmsDataRepository = New DBRepository(New WmsDataContext())
         End Sub
 
         Protected Overrides Sub Finalize()

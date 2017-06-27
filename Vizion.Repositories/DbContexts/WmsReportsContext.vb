@@ -2,9 +2,9 @@
 'Imports Queries.Persistence.EntityConfigurations
 Imports System.Data.Entity
 
-Public Class VizionWmsReportsContext : Inherits DbContext
+Public Class WmsReportsContext : Inherits DbContext
     Public Sub New()
-        MyBase.New("name=VizionWMSReportsContext")
+        MyBase.New("name=WMSReportsContext")
         Me.Configuration.LazyLoadingEnabled = False
     End Sub
 

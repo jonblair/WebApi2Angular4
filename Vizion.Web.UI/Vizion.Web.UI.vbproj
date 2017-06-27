@@ -10,7 +10,7 @@
     </ProductVersion>
     <SchemaVersion>
     </SchemaVersion>
-    <ProjectGuid>{3B7F241F-E163-480D-A9D7-1D7E37B15AB9}</ProjectGuid>
+    <ProjectGuid>{66261523-E8B5-4BED-AE3C-AE7F838D2CF0}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <RootNamespace>Vizion.Web.UI</RootNamespace>
@@ -197,7 +197,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>58676</DevelopmentServerPort>
+          <DevelopmentServerPort>61041</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:64129/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

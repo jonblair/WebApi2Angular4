@@ -15,7 +15,7 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Vizion.Web.API", "Vizion.We
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Vizion.Tests", "Vizion.Tests\Vizion.Tests.vbproj", "{87188C83-AFF7-4D27-8771-131C4DDE1CFC}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Vizion.Web.UI", "Vizion.Web.UI\Vizion.Web.UI.vbproj", "{3B7F241F-E163-480D-A9D7-1D7E37B15AB9}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Vizion.Web.UI", "Vizion.Web.UI\Vizion.Web.UI.vbproj", "{66261523-E8B5-4BED-AE3C-AE7F838D2CF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,10 +39,10 @@ Global
 		{87188C83-AFF7-4D27-8771-131C4DDE1CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87188C83-AFF7-4D27-8771-131C4DDE1CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87188C83-AFF7-4D27-8771-131C4DDE1CFC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3B7F241F-E163-480D-A9D7-1D7E37B15AB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B7F241F-E163-480D-A9D7-1D7E37B15AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B7F241F-E163-480D-A9D7-1D7E37B15AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B7F241F-E163-480D-A9D7-1D7E37B15AB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66261523-E8B5-4BED-AE3C-AE7F838D2CF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66261523-E8B5-4BED-AE3C-AE7F838D2CF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66261523-E8B5-4BED-AE3C-AE7F838D2CF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66261523-E8B5-4BED-AE3C-AE7F838D2CF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -75,8 +75,8 @@
     <Compile Include="InventoryRepository.vb" />
     <Compile Include="ShipmentRepository.vb" />
     <Compile Include="CustomerRepository.vb" />
-    <Compile Include="DbContexts\VizionWmsReportsContext.vb" />
-    <Compile Include="DbContexts\VizionWmsHistoryContext.vb" />
+    <Compile Include="DbContexts\WmsReportsContext.vb" />
+    <Compile Include="DbContexts\WmsHistoryContext.vb" />
     <Compile Include="DbRepository.vb" />
     <Compile Include="Interfaces\ICustomerRepository.vb" />
     <Compile Include="Interfaces\IDbRepository.vb" />
@@ -99,7 +99,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="UserRepository.vb" />
-    <Compile Include="DbContexts\VizionWmsDataContext.vb" />
+    <Compile Include="DbContexts\WmsDataContext.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
