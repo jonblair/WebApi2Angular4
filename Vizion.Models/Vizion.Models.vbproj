@@ -74,9 +74,9 @@
     <Compile Include="Appointment.vb" />
     <Compile Include="Customer.vb" />
     <Compile Include="Enums.vb" />
-    <Compile Include="Helpers\EncryptionHelper.vb" />
-    <Compile Include="Helpers\StringHelper.vb" />
-    <Compile Include="Helpers\TestHelper.vb" />
+    <Compile Include="StaticHelpers\EncryptionHelper.vb" />
+    <Compile Include="StaticHelpers\StringHelper.vb" />
+    <Compile Include="StaticHelpers\TestHelper.vb" />
     <Compile Include="Inventory.vb" />
     <Compile Include="Shipment.vb" />
     <Compile Include="User.vb" />
