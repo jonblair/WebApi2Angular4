@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.vb" />
+    <Compile Include="Controllers\AppointmentsController.vb" />
     <Compile Include="Controllers\CustomersController.vb" />
     <Compile Include="Controllers\InventoryController.vb" />
     <Compile Include="Controllers\ShipmentsController.vb" />

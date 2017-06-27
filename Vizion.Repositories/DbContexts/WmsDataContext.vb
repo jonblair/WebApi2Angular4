@@ -20,7 +20,7 @@ Public Class WmsDataContext : Inherits DbContext
         Dispose()
     End Sub
 
-    Public Property User() As DbSet(Of User)
+    Public Property Users() As DbSet(Of User)
         Get
             Return m_User
         End Get
@@ -30,7 +30,7 @@ Public Class WmsDataContext : Inherits DbContext
     End Property
     Private m_User As DbSet(Of User)
 
-    Public Property Customer() As DbSet(Of Customer)
+    Public Property Customers() As DbSet(Of Customer)
         Get
             Return m_Customer
         End Get
@@ -40,7 +40,7 @@ Public Class WmsDataContext : Inherits DbContext
     End Property
     Private m_Customer As DbSet(Of Customer)
 
-    Public Property Shipment() As DbSet(Of Shipment)
+    Public Property Shipments() As DbSet(Of Shipment)
         Get
             Return m_Shipment
         End Get
@@ -59,4 +59,14 @@ Public Class WmsDataContext : Inherits DbContext
         End Set
     End Property
     Private m_Inventory As DbSet(Of Inventory)
+
+    Public Property Appointments() As DbSet(Of Appointment)
+        Get
+            Return m_Appointment
+        End Get
+        Set
+            m_Appointment = Value
+        End Set
+    End Property
+    Private m_Appointment As DbSet(Of Appointment)
 End Class

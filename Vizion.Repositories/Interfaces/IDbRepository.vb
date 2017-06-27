@@ -7,5 +7,6 @@ Public Interface IDbRepository : Inherits IDisposable
     Property Customers() As ICustomerRepository
     Property Shipments() As IShipmentRepository
     Property Inventory() As IInventoryRepository
+    Property Appointments() As IAppointmentRepository
     Function Complete() As Integer
 End Interface

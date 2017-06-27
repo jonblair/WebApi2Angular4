@@ -70,7 +70,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppointmentRepository.vb" />
     <Compile Include="BaseClasses\Repository.vb" />
+    <Compile Include="Interfaces\IAppointmentRepository.vb" />
     <Compile Include="Interfaces\IInventoryRepository.vb" />
     <Compile Include="InventoryRepository.vb" />
     <Compile Include="ShipmentRepository.vb" />

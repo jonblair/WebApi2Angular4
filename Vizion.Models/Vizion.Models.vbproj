@@ -71,6 +71,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Appointment.vb" />
     <Compile Include="Customer.vb" />
     <Compile Include="Enums.vb" />
     <Compile Include="Helpers\EncryptionHelper.vb" />

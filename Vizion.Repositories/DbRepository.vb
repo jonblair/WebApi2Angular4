@@ -12,6 +12,7 @@ Public Class DBRepository
         Customers = New CustomerRepository(_context)
         Shipments = New ShipmentRepository(_context)
         Inventory = New InventoryRepository(_context)
+        Appointments = New AppointmentRepository(_context)
     End Sub
 
     Protected Overrides Sub Finalize()
@@ -60,7 +61,15 @@ Public Class DBRepository
     End Property
     Private m_Inventory As IInventoryRepository
 
-
+    Public Property Appointments As IAppointmentRepository Implements IDbRepository.Appointments
+        Get
+            Return m_Appointments
+        End Get
+        Private Set
+            m_Appointments = Value
+        End Set
+    End Property
+    Private m_Appointments As IAppointmentRepository
 
     Public Function Complete() As Integer Implements IDbRepository.Complete
         Return _context.SaveChanges()
