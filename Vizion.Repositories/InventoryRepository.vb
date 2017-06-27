@@ -25,3 +25,8 @@ Public Class InventoryRepository : Inherits Repository(Of Inventory)
         Return Context.[Set](Of Inventory)().Where(Function(x) x.Customer = customer).ToList()
     End Function
 End Class
+
+
+Public Interface IInventoryRepository : Inherits IRepository(Of Inventory)
+    Function GetInventoryByCustomer(customer As String) As List(Of Inventory)
+End Interface

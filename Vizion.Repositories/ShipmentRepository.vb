@@ -21,3 +21,6 @@ Public Class ShipmentRepository : Inherits Repository(Of Shipment)
         End Get
     End Property
 End Class
+
+Public Interface IShipmentRepository : Inherits IRepository(Of Shipment)
+End Interface

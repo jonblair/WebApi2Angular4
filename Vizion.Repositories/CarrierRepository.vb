@@ -2,8 +2,8 @@
 Imports Vizion.Repositories
 Imports System.Data.Entity
 
-Public Class UserRepository : Inherits Repository(Of User)
-    Implements IUserRepository
+Public Class CarrierRepository : Inherits Repository(Of Carrier)
+    Implements ICarrierRepository
 
     Public Sub New(context As DbContext)
         MyBase.New(context)
@@ -22,5 +22,6 @@ Public Class UserRepository : Inherits Repository(Of User)
     End Property
 End Class
 
-Public Interface IUserRepository : Inherits IRepository(Of User)
+Public Interface ICarrierRepository : Inherits IRepository(Of Carrier)
+
 End Interface

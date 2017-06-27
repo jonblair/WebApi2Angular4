@@ -69,4 +69,14 @@ Public Class WmsDataContext : Inherits DbContext
         End Set
     End Property
     Private m_Appointment As DbSet(Of Appointment)
+
+    Public Property Carriers() As DbSet(Of Carrier)
+        Get
+            Return m_Carrier
+        End Get
+        Set
+            m_Carrier = Value
+        End Set
+    End Property
+    Private m_Carrier As DbSet(Of Carrier)
 End Class

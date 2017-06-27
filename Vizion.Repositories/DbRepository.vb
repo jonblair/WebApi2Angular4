@@ -13,6 +13,7 @@ Public Class DBRepository
         Shipments = New ShipmentRepository(_context)
         Inventory = New InventoryRepository(_context)
         Appointments = New AppointmentRepository(_context)
+        Carriers = New CarrierRepository(_context)
     End Sub
 
     Protected Overrides Sub Finalize()
@@ -71,6 +72,16 @@ Public Class DBRepository
     End Property
     Private m_Appointments As IAppointmentRepository
 
+    Public Property Carriers As ICarrierRepository Implements IDbRepository.Carriers
+        Get
+            Return m_Carriers
+        End Get
+        Private Set
+            m_Carriers = Value
+        End Set
+    End Property
+    Private m_Carriers As ICarrierRepository
+
     Public Function Complete() As Integer Implements IDbRepository.Complete
         Return _context.SaveChanges()
     End Function
@@ -80,3 +91,13 @@ Public Class DBRepository
         GC.SuppressFinalize(Me)
     End Sub
 End Class
+
+Public Interface IDbRepository : Inherits IDisposable
+    Property Users() As IUserRepository
+    Property Customers() As ICustomerRepository
+    Property Shipments() As IShipmentRepository
+    Property Inventory() As IInventoryRepository
+    Property Appointments() As IAppointmentRepository
+    Property Carriers() As ICarrierRepository
+    Function Complete() As Integer
+End Interface

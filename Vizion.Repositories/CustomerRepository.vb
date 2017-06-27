@@ -21,3 +21,6 @@ Public Class CustomerRepository : Inherits Repository(Of Customer)
         End Get
     End Property
 End Class
+
+Public Interface ICustomerRepository : Inherits IRepository(Of Customer)
+End Interface

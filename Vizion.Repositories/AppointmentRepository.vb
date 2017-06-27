@@ -22,3 +22,7 @@ Public Class AppointmentRepository : Inherits Repository(Of Appointment)
     End Property
 End Class
 
+
+Public Interface IAppointmentRepository : Inherits IRepository(Of Appointment)
+End Interface
+
