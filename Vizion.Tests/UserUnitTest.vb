@@ -2,10 +2,12 @@
 Imports Microsoft.VisualStudio.TestTools.UnitTesting
 Imports Vizion.Models
 Imports Vizion.Repositories
+Imports Moq
 
 <TestClass()> Public Class UserUnitTest
     Private myMockUsers As New List(Of User)
     Private myMockUser As User
+    Private myMockUserRepo As Mock(Of IUserRepository)
 
     '<TestMethod()> Public Sub UserRepo_RecordTotalsTest()
     '    myMockUsers = New MockUserRepository(200).GetUsers().ToList()

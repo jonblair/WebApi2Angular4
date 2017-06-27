@@ -68,5 +68,6 @@ Public Class DBRepository
 
     Public Sub Dispose() Implements IDisposable.Dispose
         _context.Dispose()
+        GC.SuppressFinalize(Me)
     End Sub
 End Class
