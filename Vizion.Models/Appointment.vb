@@ -3,54 +3,35 @@ Imports Vizion.Models
 
 <Table("appointments")>
 Public Class Appointment
-    Implements IAppointment
 
-    Public Property AppointDate As Date? Implements IAppointment.AppointDate
+    Public Property AppointDate As Date?
 
-    Public Property ApptNumber As Decimal Implements IAppointment.ApptNumber
+    Public Property ApptNumber As Decimal
 
-    Public Property ApptStatus As String Implements IAppointment.ApptStatus
+    Public Property ApptStatus As String
 
-    Public Property Carrier As String Implements IAppointment.Carrier
+    Public Property Carrier As String
 
-    Public Property Comments As String Implements IAppointment.Comments
+    Public Property Comments As String
 
-    Public Property Consolidation As Decimal Implements IAppointment.Consolidation
+    Public Property Consolidation As Decimal
 
-    Public Property Contact As String Implements IAppointment.Contact
+    Public Property Contact As String
 
-    Public Property Customer As String Implements IAppointment.Customer
+    Public Property Customer As String
 
-    Public Property CustomerPo As String Implements IAppointment.CustomerPo
+    Public Property CustomerPo As String
 
-    Public Property DateTaken As Date? Implements IAppointment.DateTaken
+    Public Property DateTaken As Date?
 
     <Column("AppointmentID", TypeName:="int")>
-    Public Property Id As Integer Implements IAppointment.Id
+    Public Property Id As Integer
 
-    Public Property Location As String Implements IAppointment.Location
+    Public Property Location As String
 
-    Public Property Trailer As String Implements IAppointment.Trailer
+    Public Property Trailer As String
     <Column("TransType", TypeName:="text")>
-    Public Property TransactionType As String Implements IAppointment.TransactionType
+    Public Property TransactionType As String
 
-    Public Property Username As String Implements IAppointment.Username
+    Public Property Username As String
 End Class
-
-Public Interface IAppointment
-    Property Id As Integer
-    Property Consolidation As Decimal
-    Property TransactionType As String
-    Property Customer As String
-    Property Carrier As String
-    Property Trailer As String
-    Property AppointDate As DateTime?
-    Property CustomerPo As String
-    Property Location As String
-    Property Contact As String
-    Property ApptNumber As Decimal
-    Property Username As String
-    Property DateTaken As DateTime?
-    Property Comments As String
-    Property ApptStatus As String
-End Interface

@@ -75,6 +75,7 @@
     <Compile Include="Carrier.vb" />
     <Compile Include="Customer.vb" />
     <Compile Include="Enums.vb" />
+    <Compile Include="Receipt.vb" />
     <Compile Include="StaticHelpers\EncryptionHelper.vb" />
     <Compile Include="StaticHelpers\StringHelper.vb" />
     <Compile Include="StaticHelpers\TestHelper.vb" />

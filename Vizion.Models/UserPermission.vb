@@ -3,7 +3,6 @@ Imports Vizion.Models
 
 <Table("UserAccess")>
 Public Class UserPermissions
-    Implements IUserPermissions
 
     Public Sub New()
 
@@ -23,8 +22,3 @@ Public Class UserPermissions
 
 #End Region
 End Class
-
-
-Public Interface IUserPermissions
-
-End Interface

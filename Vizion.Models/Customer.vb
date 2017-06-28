@@ -3,7 +3,6 @@ Imports Vizion.Models
 
 <Table("customermaster")>
 Public Class Customer
-    Implements ICustomer
 
     Public Sub New()
 
@@ -14,27 +13,27 @@ Public Class Customer
     End Sub
 
 #Region "Mapped"
-    Public Property Id As Integer Implements ICustomer.Id
+    Public Property Id As Integer
     <Column("Customer", TypeName:="text")>
-    Public Property CustomerNameId As String Implements ICustomer.CustomerNameId
+    Public Property CustomerNameId As String
     <Column("CustomerName", TypeName:="text")>
-    Public Property Name As String Implements ICustomer.Name
+    Public Property Name As String
     <Column("CustomerAdd1", TypeName:="text")>
-    Public Property Address1 As String Implements ICustomer.Address1
+    Public Property Address1 As String
     <Column("CustomerAdd2", TypeName:="text")>
-    Public Property Address2 As String Implements ICustomer.Address2
+    Public Property Address2 As String
     <Column("CustomerCity", TypeName:="text")>
-    Public Property City As String Implements ICustomer.City
+    Public Property City As String
     <Column("CustomerState", TypeName:="text")>
-    Public Property State As String Implements ICustomer.State
+    Public Property State As String
     <Column("CustomerZip", TypeName:="text")>
-    Public Property Zip As String Implements ICustomer.Zip
+    Public Property Zip As String
     <Column("CustomerPhone", TypeName:="text")>
-    Public Property Phone As String Implements ICustomer.Phone
+    Public Property Phone As String
     <Column("CustomerFax", TypeName:="text")>
-    Public Property Fax As String Implements ICustomer.Fax
+    Public Property Fax As String
     <Column("CustomerContact", TypeName:="text")>
-    Public Property Contact As String Implements ICustomer.Contact
+    Public Property Contact As String
 #End Region
 
 #Region "Not Mapped"
@@ -42,17 +41,3 @@ Public Class Customer
 #End Region
 
 End Class
-
-Public Interface ICustomer
-    Property Id As Integer
-    Property CustomerNameId As String
-    Property Name As String
-    Property Address1 As String
-    Property Address2 As String
-    Property City As String
-    Property State As String
-    Property Zip As String
-    Property Phone As String
-    Property Fax As String
-    Property Contact As String
-End Interface
