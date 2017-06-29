@@ -1,10 +1,10 @@
-import { VizionUIPage } from './app.po';
+import { CoreUIPage } from './app.po';
 
-describe('vizion-ui App', function() {
-  let page: VizionUIPage;
+describe('core-ui App', function() {
+  let page: CoreUIPage;
 
   beforeEach(() => {
-    page = new VizionUIPage();
+    page = new CoreUIPage();
   });
 
   it('should display message saying app works', () => {
