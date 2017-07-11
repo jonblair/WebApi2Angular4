@@ -2,6 +2,9 @@
 Imports Vizion.Repositories
 Imports System.Data.Entity
 
+Public Interface ICustomerRepository : Inherits IRepository(Of Customer)
+End Interface
+
 Public Class CustomerRepository : Inherits Repository(Of Customer)
     Implements ICustomerRepository
 
@@ -21,6 +24,3 @@ Public Class CustomerRepository : Inherits Repository(Of Customer)
         End Get
     End Property
 End Class
-
-Public Interface ICustomerRepository : Inherits IRepository(Of Customer)
-End Interface

@@ -2,6 +2,9 @@
 Imports Vizion.Repositories
 Imports System.Data.Entity
 
+Public Interface IShipmentRepository : Inherits IRepository(Of Shipment)
+End Interface
+
 Public Class ShipmentRepository : Inherits Repository(Of Shipment)
     Implements IShipmentRepository
 
@@ -21,6 +24,3 @@ Public Class ShipmentRepository : Inherits Repository(Of Shipment)
         End Get
     End Property
 End Class
-
-Public Interface IShipmentRepository : Inherits IRepository(Of Shipment)
-End Interface

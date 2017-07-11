@@ -2,6 +2,9 @@
 Imports Vizion.Repositories
 Imports System.Data.Entity
 
+Public Interface ICarrierRepository : Inherits IRepository(Of Carrier)
+End Interface
+
 Public Class CarrierRepository : Inherits Repository(Of Carrier)
     Implements ICarrierRepository
 
@@ -21,7 +24,3 @@ Public Class CarrierRepository : Inherits Repository(Of Carrier)
         End Get
     End Property
 End Class
-
-Public Interface ICarrierRepository : Inherits IRepository(Of Carrier)
-
-End Interface

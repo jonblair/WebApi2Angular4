@@ -1,7 +1,7 @@
 <header class="app-header navbar">
   <button class="navbar-toggler mobile-sidebar-toggler hidden-lg-up" type="button">&#9776;</button>
   <a class="navbar-brand" href="#"></a>
-  
+
   <ul class="nav navbar-nav hidden-md-down">
     <li class="nav-item">
       <a class="nav-link navbar-toggler sidebar-toggler" href="#">&#9776;</a>
@@ -55,7 +55,7 @@
       <a class="nav-link navbar-toggler aside-menu-toggler" href="#">&#9776;</a>
     </li>
   </ul>
-  
+
 </header>
 
 <div class="app-body">
@@ -65,7 +65,7 @@
         <li class="nav-item">
           <a class="nav-link" routerLinkActive="active" [routerLink]="['/dashboard']"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-info">NEW</span></a>
         </li>
-        
+
         <li class="divider"></li>
         <li class="nav-title">
           UI Elements
@@ -116,6 +116,23 @@
         <li class="nav-item">
           <a class="nav-link" routerLinkActive="active" [routerLink]="['/charts']"><i class="icon-pie-chart"></i> Charts</a>
         </li>
+        <li class="nav-item nav-dropdown" routerLinkActive="open">
+          <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-organization"></i> Vizion Demo</a>
+          <ul class="nav-dropdown-items">
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="" [routerLink]=""><i class="icon-people"></i> Users</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="" [routerLink]=""><i class="icon-notebook"></i> Appointments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="" [routerLink]=""><i class="icon-clock"></i> Shipments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="" [routerLink]=""><i class="icon-envelope"></i> Carriers</a>
+            </li>
+          </ul>
+        </li>
         <li class="divider"></li>
         <li class="nav-title">
           Extras
@@ -137,7 +154,7 @@
             </li>
           </ul>
         </li>
-        
+
       </ul>
     </nav>
   </div>
@@ -148,7 +165,7 @@
     <!-- Breadcrumb -->
     <ol class="breadcrumb">
       <breadcrumbs></breadcrumbs>
-      
+
       <!-- Breadcrumb Menu-->
       <li class="breadcrumb-menu hidden-md-down">
         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
@@ -157,7 +174,7 @@
           <a class="btn btn-secondary" href="#"><i class="icon-settings"></i> &nbsp;Settings</a>
         </div>
       </li>
-      
+
     </ol>
 
     <div class="container-fluid">

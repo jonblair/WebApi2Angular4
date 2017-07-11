@@ -1,6 +1,16 @@
 ﻿Imports Vizion.Repositories
 Imports System.Data.Entity
 
+Public Interface IDbRepository : Inherits IDisposable
+    Property Users() As IUserRepository
+    Property Customers() As ICustomerRepository
+    Property Shipments() As IShipmentRepository
+    Property Inventory() As IInventoryRepository
+    Property Appointments() As IAppointmentRepository
+    Property Carriers() As ICarrierRepository
+    Function Complete() As Integer
+End Interface
+
 Public Class DBRepository
     Implements IDbRepository
 
@@ -91,13 +101,3 @@ Public Class DBRepository
         GC.SuppressFinalize(Me)
     End Sub
 End Class
-
-Public Interface IDbRepository : Inherits IDisposable
-    Property Users() As IUserRepository
-    Property Customers() As ICustomerRepository
-    Property Shipments() As IShipmentRepository
-    Property Inventory() As IInventoryRepository
-    Property Appointments() As IAppointmentRepository
-    Property Carriers() As ICarrierRepository
-    Function Complete() As Integer
-End Interface

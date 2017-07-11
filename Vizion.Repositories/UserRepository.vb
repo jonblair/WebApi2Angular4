@@ -2,6 +2,10 @@
 Imports Vizion.Repositories
 Imports System.Data.Entity
 
+Public Interface IUserRepository : Inherits IRepository(Of User)
+End Interface
+
+
 Public Class UserRepository : Inherits Repository(Of User)
     Implements IUserRepository
 
@@ -21,6 +25,3 @@ Public Class UserRepository : Inherits Repository(Of User)
         End Get
     End Property
 End Class
-
-Public Interface IUserRepository : Inherits IRepository(Of User)
-End Interface

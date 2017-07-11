@@ -2,6 +2,9 @@
 Imports Vizion.Repositories
 Imports System.Data.Entity
 
+Public Interface IAppointmentRepository : Inherits IRepository(Of Appointment)
+End Interface
+
 Public Class AppointmentRepository : Inherits Repository(Of Appointment)
     Implements IAppointmentRepository
 
@@ -21,8 +24,4 @@ Public Class AppointmentRepository : Inherits Repository(Of Appointment)
         End Get
     End Property
 End Class
-
-
-Public Interface IAppointmentRepository : Inherits IRepository(Of Appointment)
-End Interface
 

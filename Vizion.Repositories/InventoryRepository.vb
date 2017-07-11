@@ -2,6 +2,10 @@
 Imports Vizion.Repositories
 Imports System.Data.Entity
 
+Public Interface IInventoryRepository : Inherits IRepository(Of Inventory)
+    Function GetInventoryByCustomer(customer As String) As List(Of Inventory)
+End Interface
+
 Public Class InventoryRepository : Inherits Repository(Of Inventory)
     Implements IInventoryRepository
 
@@ -26,7 +30,3 @@ Public Class InventoryRepository : Inherits Repository(Of Inventory)
     End Function
 End Class
 
-
-Public Interface IInventoryRepository : Inherits IRepository(Of Inventory)
-    Function GetInventoryByCustomer(customer As String) As List(Of Inventory)
-End Interface
