@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
 import { UserTableComponent } from './user-table.component';
 import { VizionDemoRoutingModule } from './viziondemo-routing.module';
@@ -9,7 +10,8 @@ import { VizionDemoRoutingModule } from './viziondemo-routing.module';
   imports: [
     VizionDemoRoutingModule,
     CommonModule,
-    HttpModule
+    HttpModule,
+    FormsModule
   ],
   declarations: [
     UserTableComponent
