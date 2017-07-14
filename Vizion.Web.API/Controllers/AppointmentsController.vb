@@ -26,7 +26,7 @@ Namespace Controllers
 
         <HttpGet>
         Public Function [Get]() As IHttpActionResult
-            Dim myAppointments = _dbWmsDataRepository.Appointments.GetAll.OrderBy(Function(x) x.AppointDate).ToList
+            Dim myAppointments = _dbWmsDataRepository.Appointments.GetAll.OrderByDescending(Function(x) x.AppointDate).ToList
             If myAppointments.Count = 0 Then
                 Return NotFound()
             End If

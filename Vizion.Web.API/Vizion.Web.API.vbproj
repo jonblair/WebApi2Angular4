@@ -132,6 +132,7 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.vb" />
     <Compile Include="Controllers\AppointmentsController.vb" />
+    <Compile Include="Controllers\BarcodeController.vb" />
     <Compile Include="Controllers\CarriersController.vb" />
     <Compile Include="Controllers\CustomersController.vb" />
     <Compile Include="Controllers\InventoryController.vb" />

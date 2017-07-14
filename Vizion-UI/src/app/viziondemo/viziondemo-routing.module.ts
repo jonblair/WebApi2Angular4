@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { UserTableComponent } from './user-table.component';
+import { AppointmentTableComponent } from './appointment.component';
+import { CarrierTableComponent } from './carrier.component';
 
 const routes: Routes = [
   {
@@ -14,7 +16,21 @@ const routes: Routes = [
         path: 'user-table',
         component: UserTableComponent,
         data: {
-          title: 'User Table'
+          title: 'Users'
+        }
+      },
+      {
+        path: 'appointment-table',
+        component: AppointmentTableComponent,
+        data: {
+          title: 'Appointments'
+        }
+      },
+      {
+        path: 'carrier-table',
+        component: CarrierTableComponent,
+        data: {
+          title: 'Carriers'
         }
       }
     ]
