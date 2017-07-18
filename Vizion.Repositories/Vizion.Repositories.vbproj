@@ -73,11 +73,12 @@
     <Compile Include="AppointmentRepository.vb" />
     <Compile Include="BaseClasses\Repository.vb" />
     <Compile Include="CarrierRepository.vb" />
+    <Compile Include="DbContexts\WmsDataContextNashville.vb" />
     <Compile Include="InventoryRepository.vb" />
     <Compile Include="ShipmentRepository.vb" />
     <Compile Include="CustomerRepository.vb" />
-    <Compile Include="DbContexts\WmsReportsContext.vb" />
-    <Compile Include="DbContexts\WmsHistoryContext.vb" />
+    <Compile Include="DbContexts\WmsReportsContextDev.vb" />
+    <Compile Include="DbContexts\WmsHistoryContextDev.vb" />
     <Compile Include="DbRepository.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -95,7 +96,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="UserRepository.vb" />
-    <Compile Include="DbContexts\WmsDataContext.vb" />
+    <Compile Include="DbContexts\WmsDataContextDev.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

@@ -2,9 +2,9 @@
 'Imports Queries.Persistence.EntityConfigurations
 Imports System.Data.Entity
 
-Public Class WmsHistoryContext : Inherits DbContext
+Public Class WmsReportsContextDev : Inherits DbContext
     Public Sub New()
-        MyBase.New("name=WMSHistoryContext")
+        MyBase.New("name=WMSReportsContextDev")
         Me.Configuration.LazyLoadingEnabled = False
     End Sub
 

@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { UserTableComponent } from './user-table.component';
 import { AppointmentTableComponent } from './appointment.component';
 import { CarrierTableComponent } from './carrier.component';
+import { ShipmentTableComponent } from './shipment.component';
 
 import { VizionDemoRoutingModule } from './viziondemo-routing.module';
 
@@ -19,7 +20,8 @@ import { VizionDemoRoutingModule } from './viziondemo-routing.module';
   declarations: [
     UserTableComponent,
     AppointmentTableComponent,
-    CarrierTableComponent
+    CarrierTableComponent,
+    ShipmentTableComponent
   ],
   providers: [],
 })

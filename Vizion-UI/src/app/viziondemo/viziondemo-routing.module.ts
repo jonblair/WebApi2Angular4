@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { UserTableComponent } from './user-table.component';
 import { AppointmentTableComponent } from './appointment.component';
 import { CarrierTableComponent } from './carrier.component';
+import { ShipmentTableComponent } from './shipment.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,13 @@ const routes: Routes = [
         component: CarrierTableComponent,
         data: {
           title: 'Carriers'
+        }
+      },
+      {
+        path: 'shipment-table',
+        component: ShipmentTableComponent,
+        data: {
+          title: 'Shipments'
         }
       }
     ]

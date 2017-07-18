@@ -23,10 +23,6 @@ export class AppointmentTableComponent implements OnInit {
                 private _router: Router,
                 private pagerService: PagerService) { }
     ngOnInit() {
-        this.getAllAppointments();
-    }
-
-    getAllAppointments() {
         this.myAppointmentApiService.getAllAppointments()
             .subscribe(
             value => {this.appointments = value; this.setPage(1); },

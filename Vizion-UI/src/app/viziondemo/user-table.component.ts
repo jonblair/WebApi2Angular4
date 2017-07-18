@@ -22,10 +22,6 @@ export class UserTableComponent implements OnInit {
                 private _router: Router,
                 private pagerService: PagerService) { }
     ngOnInit() {
-        this.getAllUsers();
-    }
-
-    getAllUsers() {
         this.myUserApiService.getAllUsers()
             .subscribe(
             value => {this.users = value; this.setPage(1); },

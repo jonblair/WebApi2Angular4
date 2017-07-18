@@ -15,7 +15,7 @@ Namespace Controllers
     Public Class ShipmentsController : Inherits ApiController
         Private ReadOnly _dbWmsDataRepository As IDbRepository
         Public Sub New()
-            _dbWmsDataRepository = New DBRepository(New WmsDataContext())
+            _dbWmsDataRepository = New DBRepository(New WmsDataContextDev())
         End Sub
 
         Protected Overrides Sub Finalize()
@@ -26,7 +26,7 @@ Namespace Controllers
 
         <HttpGet>
         Public Function [Get]() As IHttpActionResult
-            Dim myShipments = _dbWmsDataRepository.Shipments.GetAll.OrderBy(Function(x) x.Id).ToList
+            Dim myShipments = _dbWmsDataRepository.Shipments.GetAll.OrderByDescending(Function(x) x.ShipDate).ToList
 
             If myShipments.Count = 0 Then
                 Return NotFound()

@@ -23,10 +23,6 @@ export class CarrierTableComponent implements OnInit {
                 private _router: Router,
                 private pagerService: PagerService) { }
     ngOnInit() {
-        this.getAllCarriers();
-    }
-
-    getAllCarriers() {
         this.myCarrierApiService.getAllCarriers()
             .subscribe(
             value => {this.carriers = value; this.setPage(1); },

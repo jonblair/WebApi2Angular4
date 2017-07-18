@@ -15,7 +15,7 @@ Namespace Controllers
     Public Class CustomersController : Inherits ApiController
         Private ReadOnly _dbWmsDataRepository As IDbRepository
         Public Sub New()
-            _dbWmsDataRepository = New DBRepository(New WmsDataContext())
+            _dbWmsDataRepository = New DBRepository(New WmsDataContextDev())
         End Sub
 
         Protected Overrides Sub Finalize()

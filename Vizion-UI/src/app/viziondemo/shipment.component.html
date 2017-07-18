@@ -3,36 +3,38 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header">
-                    <i class="fa fa-align-justify"></i> Appointments
+                    <i class="fa fa-align-justify"></i> Shipments
                 </div>
                 <div class="card-block ">
                     <table class="table table-bordered table-striped table-condensed ">
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Number</th>
-                                <th>Status</th>
-                                <th>Appointment Date</th>
-                                <th>Carrier</th>
-                                <th>Contact</th>
+                                <th>Shipment</th>
+                                <th>Consolidation</th>
                                 <th>Customer</th>
-                                <th>Trailer</th>
-                                <th>Location</th>
-                                <th>User</th>
+                                <th>Appointment</th>
+                                <th>Arrival</th>
+                                <th>ShipDate</th>
+                                <th>Full Pallets</th>
+                                <th>Pick Pallets</th>
+                                <th>Total Pallets</th>
+                                <th>Dock</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr *ngFor="let appointment of pagedItems ">
-                                <td>{{appointment.id}}</td>
-                                <td>{{appointment.apptNumber}}</td>
-                                <td>{{appointment.apptStatus}}</td>
-                                <td>{{appointment.appointDate| date: 'MM/dd/yyyy HH:mm'}}</td>
-                                <td>{{appointment.carrier}}</td>
-                                <td>{{appointment.contact}}</td>
-                                <td>{{appointment.customer}}</td>
-                                <td>{{appointment.trailer}}</td>
-                                <td>{{appointment.location}}</td>
-                                <td>{{appointment.username}}</td>
+                            <tr *ngFor="let shipment of pagedItems ">
+                                <td>{{shipment.id}}</td>
+                                <td>{{shipment.shipmentId}}</td>
+                                <td>{{shipment.consolidation}}</td>
+                                <td>{{shipment.customerName}}</td>
+                                <td>{{shipment.appointmentDate| date: 'MM/dd/yyyy HH:mm'}}</td>
+                                <td>{{shipment.arrivalDate| date: 'MM/dd/yyyy HH:mm'}}</td>
+                                <td>{{shipment.shipDate| date: 'MM/dd/yyyy HH:mm'}}</td>
+                                <td>{{shipment.fullPallets}}</td>
+                                <td>{{shipment.pickPallets}}</td>
+                                <td>{{shipment.totalPallets}}</td>
+                                <td>{{shipment.dock}}</td>
                             </tr>
                         </tbody>
                     </table>
