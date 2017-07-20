@@ -5,6 +5,7 @@ import { UserTableComponent } from './user-table.component';
 import { AppointmentTableComponent } from './appointment.component';
 import { CarrierTableComponent } from './carrier.component';
 import { ShipmentTableComponent } from './shipment.component';
+import { InventoryMetricsComponent } from './inventory.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,13 @@ const routes: Routes = [
         component: ShipmentTableComponent,
         data: {
           title: 'Shipments'
+        }
+      },
+      {
+        path: 'inventory-metrics',
+        component: InventoryMetricsComponent,
+        data: {
+          title: 'Inventory Metrics'
         }
       }
     ]

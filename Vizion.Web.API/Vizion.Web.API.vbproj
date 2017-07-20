@@ -136,6 +136,7 @@
     <Compile Include="Controllers\CarriersController.vb" />
     <Compile Include="Controllers\CustomersController.vb" />
     <Compile Include="Controllers\InventoryController.vb" />
+    <Compile Include="Controllers\InventoryMetricsController.vb" />
     <Compile Include="Controllers\ShipmentsController.vb" />
     <Compile Include="Controllers\UsersController.vb" />
     <Compile Include="Global.asax.vb">

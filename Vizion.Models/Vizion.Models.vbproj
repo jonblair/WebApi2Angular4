@@ -74,6 +74,7 @@
     <Compile Include="Appointment.vb" />
     <Compile Include="Carrier.vb" />
     <Compile Include="Customer.vb" />
+    <Compile Include="CustomerPalletMetrics.vb" />
     <Compile Include="Enums.vb" />
     <Compile Include="Receipt.vb" />
     <Compile Include="StaticHelpers\EncryptionHelper.vb" />

@@ -48,6 +48,17 @@ Namespace Controllers
         End Function
 
         <HttpGet>
+        <ResponseType(GetType(CustomerPalletMetrics))>
+        Public Function GetInventoryPalletMetrics(id As Integer) As IHttpActionResult
+            Dim myInventoryPalletMetrics = _dbWmsDataRepository.Inventory.GetInventoryMetricsByPallets
+
+            If myInventoryPalletMetrics Is Nothing Or myInventoryPalletMetrics.Count = 0 Then
+                Return NotFound()
+            End If
+            Return Ok(myInventoryPalletMetrics)
+        End Function
+
+        <HttpGet>
         <Route("{name}")>
         Public Function GetInventoryByCustomerName(name As String) As IHttpActionResult
             Dim myInventorys = Me.GetBySearch(Function(x) x.Customer.Contains(name)).OrderBy(Function(x) x.Id).Take(100).ToList()
