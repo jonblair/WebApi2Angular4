@@ -192,11 +192,11 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Vizion.Models\Demo.Models.vbproj">
+    <ProjectReference Include="..\Demo.Models\Demo.Models.vbproj">
       <Project>{b5f8153b-4f26-4992-a414-e3e3c16f865f}</Project>
       <Name>Demo.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Vizion.Repositories\Demo.Repositories.vbproj">
+    <ProjectReference Include="..\Demo.Repositories\Demo.Repositories.vbproj">
       <Project>{9e421887-63bf-4d77-90dc-1dabc866af77}</Project>
       <Name>Demo.Repositories</Name>
     </ProjectReference>
