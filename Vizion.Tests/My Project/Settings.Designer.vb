@@ -64,9 +64,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.Vizion.Tests.My.MySettings
+        Friend ReadOnly Property Settings() As Global.Demo.Tests.My.MySettings
             Get
-                Return Global.Vizion.Tests.My.MySettings.Default
+                Return Global.Demo.Tests.My.MySettings.Default
             End Get
         End Property
     End Module

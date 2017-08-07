@@ -2,10 +2,10 @@
 Imports System.Web.Http
 Imports System.Collections.Generic
 Imports System.Linq
-Imports Vizion.Models
+Imports Demo.Models
 Imports System.Web.Http.Description
 Imports System.Threading.Tasks
-Imports Vizion.Repositories
+Imports Demo.Repositories
 Imports System.Linq.Expressions
 Imports System.Data.Entity
 Imports System.Net.Http

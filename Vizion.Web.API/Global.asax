@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.vb" Inherits="Vizion.Web.API.WebApiApplication" Language="VB" %>
+﻿<%@ Application Codebehind="Global.asax.vb" Inherits="Demo.Web.API.WebApiApplication" Language="VB" %>

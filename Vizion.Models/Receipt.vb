@@ -1,5 +1,5 @@
 ﻿Imports System.ComponentModel.DataAnnotations.Schema
-Imports Vizion.Models
+Imports Demo.Models
 
 <Table("receipts")>
 Public Class Receipt

@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Vizion.Repositories", "Vizion.Repositories\Vizion.Repositories.vbproj", "{9E421887-63BF-4D77-90DC-1DABC866AF77}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Demo.Repositories", "Vizion.Repositories\Demo.Repositories.vbproj", "{9E421887-63BF-4D77-90DC-1DABC866AF77}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Vizion.Models", "Vizion.Models\Vizion.Models.vbproj", "{B5F8153B-4F26-4992-A414-E3E3C16F865F}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Demo.Models", "Vizion.Models\Demo.Models.vbproj", "{B5F8153B-4F26-4992-A414-E3E3C16F865F}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Vizion.Web.API", "Vizion.Web.API\Vizion.Web.API.vbproj", "{89F3C4B5-C6D7-4B90-9F31-3BD0DFF840D0}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Demo.Web.API", "Vizion.Web.API\Demo.Web.API.vbproj", "{89F3C4B5-C6D7-4B90-9F31-3BD0DFF840D0}"
 	ProjectSection(ProjectDependencies) = postProject
 		{B5F8153B-4F26-4992-A414-E3E3C16F865F} = {B5F8153B-4F26-4992-A414-E3E3C16F865F}
 		{9E421887-63BF-4D77-90DC-1DABC866AF77} = {9E421887-63BF-4D77-90DC-1DABC866AF77}
 	EndProjectSection
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Vizion.Tests", "Vizion.Tests\Vizion.Tests.vbproj", "{87188C83-AFF7-4D27-8771-131C4DDE1CFC}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Demo.Tests", "Vizion.Tests\Demo.Tests.vbproj", "{87188C83-AFF7-4D27-8771-131C4DDE1CFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

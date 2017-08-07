@@ -1,5 +1,5 @@
 ﻿Imports System.Linq.Expressions
-Imports Vizion.Repositories
+Imports Demo.Repositories
 Imports System.Data.Entity
 Imports System
 Imports System.Collections.Generic

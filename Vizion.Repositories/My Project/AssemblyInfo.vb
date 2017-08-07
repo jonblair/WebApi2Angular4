@@ -8,10 +8,10 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Vizion.Repositories")> 
+<Assembly: AssemblyTitle("Demo.Repositories")>
 <Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
-<Assembly: AssemblyProduct("Vizion.Repositories")> 
+<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyProduct("Demo.Repositories")>
 <Assembly: AssemblyCopyright("Copyright ©  2017")> 
 <Assembly: AssemblyTrademark("")> 
 

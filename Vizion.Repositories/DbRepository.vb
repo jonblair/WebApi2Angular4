@@ -1,4 +1,4 @@
-﻿Imports Vizion.Repositories
+﻿Imports Demo.Repositories
 Imports System.Data.Entity
 
 Public Interface IDbRepository : Inherits IDisposable

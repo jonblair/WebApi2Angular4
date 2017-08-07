@@ -1,4 +1,4 @@
-﻿Imports Vizion.Models
+﻿Imports Demo.Models
 'Imports Queries.Persistence.EntityConfigurations
 Imports System.Data.Entity
 

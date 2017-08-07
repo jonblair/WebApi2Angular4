@@ -1,5 +1,5 @@
-﻿Imports Vizion.Models
-Imports Vizion.Repositories
+﻿Imports Demo.Models
+Imports Demo.Repositories
 Imports System.Data.Entity
 
 Public Interface IInventoryRepository : Inherits IRepository(Of Inventory)

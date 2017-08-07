@@ -1,5 +1,6 @@
 ﻿Imports System.Text
 Imports System.Globalization
+Imports System.Threading
 
 Public NotInheritable Class StringHelper
 
@@ -16,8 +17,9 @@ Public NotInheritable Class StringHelper
     End Function
 
     Public Shared Function TitleCase(ByVal input As String) As String
-        Dim TextInfo As TextInfo = New CultureInfo("en-US", False).TextInfo
+        Dim CultureInfo As CultureInfo = Thread.CurrentThread.CurrentCulture
+        Dim textInfo As TextInfo = CultureInfo.TextInfo
 
-        Return TextInfo.ToTitleCase(input)
+        Return textInfo.ToTitleCase(input)
     End Function
 End Class

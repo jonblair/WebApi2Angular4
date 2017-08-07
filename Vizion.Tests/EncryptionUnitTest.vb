@@ -1,7 +1,7 @@
 ﻿Imports System.Text
 Imports Microsoft.VisualStudio.TestTools.UnitTesting
-Imports Vizion.Models
-Imports Vizion.Repositories
+Imports Demo.Models
+Imports Demo.Repositories
 
 <TestClass()> Public Class EncryptionUnitTest
 

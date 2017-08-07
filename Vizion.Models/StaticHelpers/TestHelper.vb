@@ -1,4 +1,4 @@
-﻿Imports Vizion.Models
+﻿Imports Demo.Models
 
 Public NotInheritable Class TestHelper
     Public Shared DefaultNumberOfTotalMockRecords As Integer = 50
